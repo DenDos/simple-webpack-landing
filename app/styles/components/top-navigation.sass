@@ -1,0 +1,25 @@
+.top-navigation
+  display: flex
+  align-content: center
+  align-items: center
+  ul
+    width: 100%
+    margin: 0
+    padding: 0
+    display: flex
+    justify-content: space-around
+
+    li
+      display: inline
+      cursor pointer
+      a
+        color: black
+        display: inline
+        padding: 10px
+        padding-right: 20px
+        font-weight: bold
+        text-transform: uppercase
+      &.active
+        a
+          color: $site-color
+

@@ -70,6 +70,14 @@ module.exports = {
       {
         test: /\.html$/,
         loader: 'html'
+      },
+      {
+        test: /\.(png|jpg|svg|ttf|eof|woff|woff2)$/,
+        loader: 'file'
+      },
+      {
+        test: /\.(png|jpg)$/,
+        loader: 'url-loader'
       }
     ]
   }

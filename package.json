@@ -52,6 +52,7 @@
     "coffee-loader": "^0.7.2",
     "coffee-script": "~1.6",
     "flexboxgrid": "^6.3.1",
+    "font-awesome": "^4.7.0",
     "jade": "^1.11.0",
     "jade-html-loader": "0.0.3",
     "jade-loader": "^0.8.0",

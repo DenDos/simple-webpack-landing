@@ -5,7 +5,7 @@ var webpack          = require('webpack'),
   path               = require('path'),
   Visualizer         = require('webpack-visualizer-plugin'),
   HtmlWebpackPlugin  = require('html-webpack-plugin')
-
+var BowerWebpackPlugin = require("bower-webpack-plugin");
 var opts = {
   app: path.resolve(__dirname, 'app'),
   root:  path.resolve(__dirname, 'app'),
@@ -18,6 +18,7 @@ var cssAppExtractor = new ExtractTextPlugin('app.css')
 module.exports = {
   context: opts.app,
   resolve: {
+    modulesDirectories: ["node_modules", "bower_components"],
     root: opts.root
   },
   devServer: {
@@ -33,6 +34,7 @@ module.exports = {
     publicPath: '/'
   },
   plugins: [
+    new BowerWebpackPlugin(),
     new webpack.ProvidePlugin({
       $: "jquery",
       "window.jQuery": "jquery",

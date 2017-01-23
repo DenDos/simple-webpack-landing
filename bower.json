@@ -1,0 +1,20 @@
+{
+  "name": "landing",
+  "description": "",
+  "main": "server/index.js",
+  "authors": [
+    "comeonandroid <comeonandroid@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/DenDos/simple-webpack-landing",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "parallax.js": "^1.4.2"
+  }
+}

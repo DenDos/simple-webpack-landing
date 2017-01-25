@@ -15,37 +15,37 @@
       @content
 =MQ($canvas)
   @if $canvas == XXS
-    @media only screen and (min-width: $XXS)
+    @media only screen and (max-width: $XXS)
       @content
   @if $canvas == XS
-    @media only screen and (min-width: $XS)
+    @media only screen and (max-width: $XS)
       @content
   @if $canvas == S
-    @media only screen and (min-width: $S)
+    @media only screen and (max-width: $S)
       @content
   @else if $canvas == M
-    @media only screen and (min-width: $M)
+    @media only screen and (max-width: $M)
       @content
   @else if $canvas == LG
-    @media only screen and (min-width: $LG)
+    @media only screen and (max-width: $LG)
       @content
   @else if $canvas == L
-    @media only screen and (min-width: $L)
+    @media only screen and (max-width: $L)
       @content
   @else if $canvas == XL
-    @media only screen and (min-width: $XL)
+    @media only screen and (max-width: $XL)
       @content
   @else if $canvas == XXL
-    @media only screen and (min-width: $XXL)
+    @media only screen and (max-width: $XXL)
       @content
   @else if $canvas == TXL
-    @media only screen and (min-width: $TXL)
+    @media only screen and (max-width: $TXL)
       @content
   @else if $canvas == QXL
-    @media only screen and (min-width: $QXL)
+    @media only screen and (max-width: $QXL)
       @content
   @else if $canvas == SL
-    @media only screen and (min-width: $SL)
+    @media only screen and (max-width: $SL)
       @content
 
 =centrify($switcher: "both")

@@ -1,5 +1,15 @@
 .mobile-menu
-  display: none
+  @include transition(all, 0.55s, ease, 0s)
+  position: fixed
+  display: flex;
+  top: 0px
+  right: -200px
+  justify-content: center;
+  align-items: center;
+  width: 200px
+  height: 100%
+  background: $transparent-black-8
+  z-index: 100
   ul
     width: 100%
     text-align: center
@@ -15,14 +25,5 @@
       a
        color: $site-color
   &.open
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute
-    top: 0
-    left: 0
-    width: 100%
-    height: 100%
-    background: $transparent-black-8
-    z-index: 100
+    right: 0px
 

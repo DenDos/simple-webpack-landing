@@ -4,6 +4,38 @@
   padding-right: 30px
   display: none
   z-index: 101
+  position: relative
+  top: 0px
+  right: 0px
+  i
+    -webkit-transition-duration: 0s
+    transition-duration: 0s
+    -webkit-transition-delay: 0.2s
+    transition-delay: 0.2s
+
+    margin: 0 auto
+    position: relative
+    top: 12px
+    &:before, &:after
+      position: absolute
+      content: ''
+    width: 30px
+    height: 6px
+    background-color: #000
+    display: block
+    &:before, &:after
+      width: 30px
+      height: 6px
+      background-color: #000
+      display: block
+    &:before
+      margin-top: -12px
+    &:after
+      margin-top: 12px
+
   &.active
-    @include transition(all, 0.35s, ease, 0s)
+    @include transition(right, 0.35s, ease, 0s)
+    position: fixed
+    top: 20px
+    right: 200px
     color: $material-gray

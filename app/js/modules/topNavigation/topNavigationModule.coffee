@@ -4,6 +4,7 @@ topNavigationModule = ()->
   toggleMenu = (button, menu) ->
     $(button).toggleClass("active")
     $(menu).toggleClass("open")
+    $('.overlay').toggleClass("open")
     toogleWrap(button)
 
   toogleWrap = (button) ->
